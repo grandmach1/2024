@@ -18,6 +18,16 @@
      /* -webkit-tap-highlight-color: rgba(0,0,0,0); */
     }
 
+    @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        p.blinking {
+            animation: blink 0.3s infinite;
+        }
+
     .hero_h1 {
     color: rgb(0, 0, 0);
     position: absolute;
@@ -142,8 +152,8 @@
     <div class="hero_h1">
       <h1>QUE VOUS RÉSERVE 2024?</h1>
   </div>-->
-    <p>QUE VOUS RÉSERVE 2024?<br>
-Grattez avec votre curseur pour le découvrir</p>
+    <p class="blinking">QUE VOUS RÉSERVE 2024?</p>
+<p>Grattez avec votre curseur pour le découvrir</p>
 
     <!--<br/>that can be erased
     using touch ou mouse moves.<br/><b>try by yourself below...</b></p> 
@@ -207,7 +217,7 @@ Grattez avec votre curseur pour le découvrir</p>
 <button onclick="window.location.href = 'https://evabarenton.com/';" class="custom-btn btn-1">evabarenton.com</button>
 
   
-    <button onclick="window.location.href = 'https://evabarenton.com/2024';" class="custom-btn btn-1">Cliquez ici pour éclamez votre gain</button>
+    <button onclick="window.location.href = 'https://evabarenton.com/2024';" class="custom-btn btn-1">Cliquez ici pour réclamer votre gain</button>
   
     </div>
 </html>
